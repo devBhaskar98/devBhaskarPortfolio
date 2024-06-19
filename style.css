@@ -51,6 +51,12 @@ a {
   text-decoration-color: white;
 }
 
+a.dark-mode {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
 a:hover {
   color: grey;
   text-decoration: underline;

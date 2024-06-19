@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="./src/themeToggle/themeToggleButton.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -17,6 +18,18 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <div class="toggle-container">
+              <button id="darkModeToggle" class="toggle-button">
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 4.5V3a1 1 0 00-2 0v1.5a1 1 0 102 0zM12 21v-1.5a1 1 0 10-2 0V21a1 1 0 102 0zM4.5 12H3a1 1 0 100 2h1.5a1 1 0 100-2zM21 12h-1.5a1 1 0 100 2H21a1 1 0 100-2zM5.637 5.637a1 1 0 00-1.414 0l-1.06 1.06a1 1 0 101.414 1.415l1.06-1.06a1 1 0 000-1.415zM19.363 19.363a1 1 0 00-1.414 0l-1.06 1.06a1 1 0 001.414 1.415l1.06-1.06a1 1 0 000-1.415zM5.637 18.364l-1.06-1.06a1 1 0 00-1.415 1.415l1.06 1.06a1 1 0 001.415-1.415zM19.363 5.636l-1.06-1.06a1 1 0 00-1.415 1.414l1.06 1.06a1 1 0 001.415-1.414zM12 8a4 4 0 110 8 4 4 0 010-8z"/>
+                </svg>
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21.752 15.002a9.993 9.993 0 01-9.75 7.998 9.99 9.99 0 01-9.505-6.92 10.029 10.029 0 0012.955-12.955 9.99 9.99 0 016.92 9.505 9.993 9.993 0 01-.62 2.372zM12 2c-5.516 0-10 4.484-10 10s4.484 10 10 10c5.415 0 9.804-4.325 9.996-9.726A11.993 11.993 0 0012 2z"/>
+                </svg>
+              </button>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
@@ -43,11 +56,11 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Bhaskar Dixit</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
+        <p class="section__text__p2">Software Engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Bhaskar_Dixit_Resume.pdf')"
           >
             Download CV
           </button>
@@ -75,13 +88,13 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
+        </div> -->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -103,6 +116,16 @@
               <p>B.E. Computer Science Bachelors Degree<br />Mumbai University</p>
               <p>B.E. Computer Science Bachelors Degree<br />Mumbai University</p>
             </div>
+            <div class="details-container">
+              <img
+                src="./assets/award.png"
+                alt="Award icon"
+                class="icon"
+              />
+              <h3>Award</h3>
+              <p>Pat On Back: Led the inception-to-completion development of a web app using Angular and Spring Boot(Jan 2023)</p>
+              <p>Team Award: Completion of our Quarterly development task, delivered promptly and with precision.(Jun 2020)</p>
+            </div>
           </div>
           <div class="text-container">
             <p>
@@ -118,13 +141,14 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -243,6 +267,7 @@
               </article>
             </div>
           </div>
+          
         </div>
       </div>
       <img
@@ -252,6 +277,7 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -338,6 +364,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -360,6 +387,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -374,5 +402,6 @@
       <p>Copyright &#169; 2024 Bhaskar Dixit. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="./src/themeToggle/themeToggleButton.js"></script>
   </body>
 </html>
