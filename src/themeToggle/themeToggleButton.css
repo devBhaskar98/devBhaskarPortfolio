@@ -8,12 +8,28 @@ body {
     background-color: #121212;
     color: #ffffff;
   }
+
+ h3, h4, h5, h6 {
+    transition: color 0.3s;
+}
+ .dark-mode h3, 
+.dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: Black;
+}
+
+.dark-mode a {
+  color: white;
+}
+
+
+  /*  */
   
   /* Toggle button styling */
   .toggle-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15%;
     /* height: 100vh; */
   }
 

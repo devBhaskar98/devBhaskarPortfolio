@@ -235,6 +235,14 @@ section {
   border-radius: 2rem;
 }
 
+.action-button {
+  /* color: green; */
+}
+
+.action-button.dark-mode {
+  color: white;
+}
+
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
