@@ -1,0 +1,92 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+ h3, h4, h5, h6 {
+    transition: color 0.3s;
+}
+ .dark-mode h3, 
+.dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: Black;
+}
+
+.dark-mode a {
+  color: white;
+}
+
+
+  /*  */
+  
+  /* Toggle button styling */
+  .toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    /* height: 100vh; */
+  }
+
+  .toggle-button {
+    appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  .toggle-button::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toggle-button.dark-mode {
+    background-color: #555;
+  }
+
+  .toggle-button.dark-mode::before {
+    transform: translateX(25px);
+    background-color: #000;
+  }
+
+  .toggle-button svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .toggle-button.dark-mode svg.sun {
+    display: none;
+  }
+
+  .toggle-button svg.moon {
+    display: none;
+  }
+
+  .toggle-button.dark-mode svg.moon {
+    display: block;
+  }
+
+  .toggle-button svg.sun {
+    display: block;
+  }

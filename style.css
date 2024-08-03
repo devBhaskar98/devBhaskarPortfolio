@@ -51,6 +51,12 @@ a {
   text-decoration-color: white;
 }
 
+a.dark-mode {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
 a:hover {
   color: grey;
   text-decoration: underline;
@@ -227,6 +233,14 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+}
+
+.action-button {
+  /* color: green; */
+}
+
+.action-button.dark-mode {
+  color: white;
 }
 
 .btn-color-1,
